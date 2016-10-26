@@ -1,4 +1,4 @@
-package HomeWork.GUI2.Smile;
+package labs.labs3.Smile;
 import javax.swing.JPanel;
 import java.awt.*;
 
