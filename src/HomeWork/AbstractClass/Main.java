@@ -1,8 +1,5 @@
 package HomeWork.AbstractClass;
 
-/**
- * Created by liveuser on 14.10.16.
- */
 public class Main {
     public static void main(String[] args) {
         Shape s1 = new Circle(false, "RED",5.5 ); // Upcast Circle to Shape
