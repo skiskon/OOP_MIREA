@@ -4,18 +4,22 @@ package Leap;
  и для оставшихся двух точек высчитывает расстояние от них до готовой плоскости)*/
 public class Main {
     //переменные для задания координат исходных точек
-    static int Ax,Ay,Az,Bx,By,Bz,Cx,Cy,Cz,Dx,Dy,Dz,Ex,Ey,Ez;
+    static double Ax,Ay,Az,Bx,By,Bz,Cx,Cy,Cz,Dx,Dy,Dz,Ex,Ey,Ez;
 
     //координаты двух векторов, их можно рассчитаьь вычитанием, но мы их введем сразу
-    static int px,py,pz,qx,qy,qz;
+    static double px,py,pz,qx,qy,qz;
 
     //значение при коэффициентах
-    static int x,y,z,free;
+    static double x,y,z,free;
 
     //коэффициенты общего вектора
-    static int A,B,C;
+    static double A,B,C;
 
-    static int d1,d2,d3;
+    //определители 2*2 при лахложении по левому столбцу
+    static double d1,d2,d3;
+
+    //расстояние от точки до плоскости
+    static double h;
 
     public static void main(String[] args) {
         d1 = py*qz - qy*pz;
@@ -25,6 +29,7 @@ public class Main {
         y = d2;
         z = d3;
         free = A*d1 - B*d2 + C*d3;
+        h =Math.abs(x*Ex + y*Ey + z*Ez + free)/Math.sqrt(x*x + y*y + z*z);
 
     }
 }
