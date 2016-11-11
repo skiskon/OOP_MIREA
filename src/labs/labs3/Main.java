@@ -1,4 +1,4 @@
-package labs.labs3.Smile;
+package labs.labs3;
 
 
 import javax.swing.*;
