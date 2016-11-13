@@ -2,11 +2,11 @@ package Leap;
 
 //чтобы возвращать два параметра из рекурсии
 public class Duo {
-    public int First;
-    public int Second;
+    public double First;
+    public double Second;
 
-    public Duo(int f, int s){
-        f = First;
-        s = Second;
+    public Duo(double f, double s){
+        First = f;
+        Second = s;
     }
 }
