@@ -18,7 +18,7 @@ public class Exception2 {
 
         {
             i = Integer.parseInt(intString);
-            System.out.println( 2 / i );
+            System.out.println( 10 / i );
 
         }
         catch (NumberFormatException e){
@@ -30,7 +30,7 @@ public class Exception2 {
             System.out.println("Delite na nol!!!!");
         }
         finally {
-            System.out.println("Pisya");
+            System.out.println("--------");
         }
 
 
