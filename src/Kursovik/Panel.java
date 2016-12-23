@@ -91,7 +91,7 @@ class Panel extends JFrame{
     private void onCLick(){
         /**
 
-         * Метод для обработки всез данный
+         * Метод для обработки всех данный
 
          */
         try
